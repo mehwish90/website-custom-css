@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 769px) {
+  .hero {
+    font-size: 18px;
+    padding: 30px;
+  }
+}
+body{
+  font-family: Arial,  sans-serif;
+  background-color: #addaec;
+  color:rgb(48, 105, 155);
+}
+*{
+  text-decoration: none;
+  color: rgb(24, 85, 138);
+}
+
+h1,h2,h3{
+  font-weight: bold;
+}
+.header{background-color: rgb(111, 189, 209);
+color:#fff;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header .logo{
+  font-size: 50px;
+  color: #f0f8ff;
+}
+.header .nav{
+  display: flex;
+  gap: 40px;
+}
+.header nav a{
+  color: #f0f8ff;
+  font-weight: bolder;
+}
+.header .nav a:hover{
+  text-decoration:underline;
+  color: burlywood;
+}
+footer{
+  background-color: fuchsia;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer p{
+  margin: 0;
+}
+.hero{
+  background-size: cover;
+  background-position: center;
+  height: 85vh; 
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  padding-left:60px;
+  
+}
+.hero h1{ font-size: 50px;
+  color:cadetblue; 
+  text-shadow: 2px;
+  
+  
+  }
+  .hero p 
+  {color: rgb(131, 40, 13);
+  font: 50px;
+  margin: top 10px;
+  font-weight:10px ;
+
+}
+.hero button{
+      margin-top: 10px;
+      background: cadetblue;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 15px; 
+      font-size: 26px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      color: #fff;
+}
+     .hero button:hover{
+      background-color: rgb(0, 140, 255);
+}
+
+
+    .about{
+     background-size: cover;
+     background-position: left;
+     height: 85vh;
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:60px 20px;
+  
+  
+}
+ .about h1{
+  max-width:900px;
+  text-align: left;
+  padding: 20px;
+  color:cadetblue;
+  font-size: 80px;
+  text-align: center;}
+.about p{
+  max-width:900px;
+  text-align: left;
+  padding: 20px;
+  color:cadetblue;
+  font-size: 20px
+}
+ .Toys{
+   display: grid;
+   grid-template-columns:repeat(3 ,1fr);
+   gap: 20px;
+   margin-top: 40px;
+   margin: 50px;}
+
+  .toy-card{
+  width: 80%;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0.1);
+  text-align: center;
+}
+ .toy-card img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.toy-card h3{ 
+  margin-top: 40px ;}
+
+ .toy-card p{
+  color: rgb(51, 139, 139);
+  font-size: 20px;
+}
+ .toy-card .price{
+  font-size: 20px;
+  font-weight: bold;
+  color: cadetblue;
+  margin-top: 10px;
+  
+}
+.toy-card button{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: #f0f8ff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.toy-card button:hover{
+  background-color: aqua;}
+
+.toy-card img{
+  width: 80%;
+height: auto;
+border-radius: 10px;
+transition: trasfore 0.3s ease;
+}
+.toy-card:hover img{
+  transform: scale(1.3);}
+
+.form{
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0.1);
+  
+  
+  
+}
+.form input,textarea{
+  width: 100%;
+  padding:10px ;
+  margin: 10px 0;
+  border: 1px solid;
+  border-radius: 5px;
+
+}
+.form button{
+  padding: 10px  20px;
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  
+  
+}
+.form button:hover{background-color: aqua;
+}
+
+
+@media(max-width: 768px){
+.header{
+  flex-direction: column;
+  text-align: center;
+}
+.header .logo{
+  margin-bottom: 10px;
+}
+.header nav{
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.hero{height: 70vh;
+padding: 20px;
+text-align: center;}
+.hero h1{
+  font-size: 30px;
+}
+.hero p{
+  font-size: 20px;
+}
+.hero button{ width: 100%;
+padding: 12px;
+font-size: 16px;}
+.Toys{
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
+.about{padding: 40px 20px;
+  height: auto;
+}
+.about {width: 100%;
+padding: 20px;}
+}
+.form{margin: 20px;
+padding: 20px;}
